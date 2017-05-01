@@ -14,5 +14,5 @@ ENV HUGO_RESOURCE hugo_${HUGO_VERSION}_Linux-64bit
 
 ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_RESOURCE}.tar.gz /tmp/
 
-RUN  tar -xvzf /tmp/${HUGO_RESOURCE}.tar.gz -C /tmp/ \
+RUN  mkdir /tmp/${HUGO_RESOURCE} && tar -xvzf /tmp/${HUGO_RESOURCE}.tar.gz -C /tmp/${HUGO_RESOURCE}/ \
 	&& mv /tmp/${HUGO_RESOURCE}/${HUGO_BINARY} /usr/bin/hugo && rm -rf /tmp/hugo*
