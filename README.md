@@ -5,7 +5,7 @@ It is based off the work done over here: https://github.com/publysher/docker-hug
 
 - I am using Alpine Linux as a base and not Debian (makes for a smaller footprint)
 - Pygments is installed from PyPI, which provides a more up to date version of the package as opposed to the system package manager.
-- The Hugo binary is 0.17 which is newer than the one currently in the publysher repo.
+- The Hugo binary is currently 0.20.6 which is newer than the one currently in the publysher repo.
 - I am currently using this Dockerfile to create my final image, so I have removed the ONBUILD instructions for use in inherited images (I may come back to this later).
 
 The container is built to include git, python and pip. Pygments for syntax colouring is installed via pip.
