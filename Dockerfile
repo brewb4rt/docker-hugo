@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER d@practicalmagic.co.za
+MAINTAINER dino@dinofizzotti.com
 
 RUN apk add --update \
     git \
