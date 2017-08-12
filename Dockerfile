@@ -8,7 +8,7 @@ RUN apk add --update \
   && pip install pygments \
   && rm -rf /var/cache/apk/*
 
-ENV HUGO_VERSION 0.20.6
+ENV HUGO_VERSION 0.26
 ENV HUGO_BINARY hugo
 ENV HUGO_RESOURCE hugo_${HUGO_VERSION}_Linux-64bit
 
