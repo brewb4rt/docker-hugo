@@ -1,11 +1,11 @@
-FROM alpine:3.4
+FROM alpine:latest
 MAINTAINER dino@dinofizzotti.com
 
 RUN apk add --update \
     git \
   && rm -rf /var/cache/apk/*
 
-ENV HUGO_VERSION 0.62.2
+ENV HUGO_VERSION 0.69.0
 ENV HUGO_BINARY hugo
 ENV HUGO_RESOURCE hugo_${HUGO_VERSION}_Linux-64bit
 
